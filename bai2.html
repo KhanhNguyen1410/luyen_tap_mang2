@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let str = ['c','s','s','2','6','1'];
+    let first = 0;
+    let last = str.length - 1;
+    document.write("mảng ban đầu: "+ str);
+    for (let i = 0; i < str.length; i++) {
+        while (first< last){
+            let a = str[first];
+            str[first] = str[last];
+            str[last] = a;
+            first++;
+            last--;
+        }
+    } document.write("<br>"+"mảng đảo: "+ str);
+
+</script>
+</body>
+</html>
